@@ -1,13 +1,11 @@
 import "./App.css"
-import MyContainer from "./layout/MyContainer"
-import Login from "./components/Login"
 import { Outlet } from "react-router-dom"
-import { Typography } from "@mui/material"
+import Header from "./components/Header"
 
 function App() {
   return (
     <>
-      <Typography variant = "h3" >Header</Typography>
+      <Header />
       <Outlet />
     </>
   )
