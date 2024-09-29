@@ -12,14 +12,16 @@ import {
 import App from "./App";
 import MyForm from "./components/Login";
 import Home from "./components/Home";
+import Extra from "./components/Extra";
+import Contact from "./components/Contact"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="/" element={<Home />} />
+      <Route index element={<Home />} />
       <Route path="/form" element={<MyForm />} />
-      <Route path="/extra" element={<h1>Extra</h1>} />
-      <Route path="/contact" element={<h1>Contact</h1>} />
+      <Route path="/extra" element={<Extra />} />
+      <Route path="/contact" element={<Contact />} />
     </Route>
   )
 );
